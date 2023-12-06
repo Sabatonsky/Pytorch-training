@@ -33,7 +33,7 @@ for epoch in range(n_iters):
     #Forward
     Y_hat = model(X)
     #Loss
-    l = loss(Y, Y_hat)
+    l = loss(Y_hat, Y)
     #Backprop
     l.backward()
     #Update W
