@@ -46,7 +46,7 @@ model = LogisticRegression(n_features)
 
 lr = 0.01
 n_iters = 1000
-    
+
 loss = nn.BCELoss()
 
 optimizer = torch.optim.SGD(model.parameters(), lr=lr)
